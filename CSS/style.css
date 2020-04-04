@@ -1,0 +1,115 @@
+.navbar, .navbar-brand {
+    padding: 0rem 0rem;
+    background-color: black;
+}
+.list {
+    padding: 0px 0px;
+    width: 20%;
+    /* max-height: 100vh; */
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+.card-container {
+    max-height: 70vh;
+    width: 100%;
+    overflow: auto;
+    margin-top: 0.6rem;
+}
+#listTitle {
+    background-color: #e9ecef;
+    border: none;
+    /* height: 1.8rem; */
+}
+.list-bottom{
+    margin-top: .8rem;
+    padding-bottom: .8rem;
+    margin-left: 0.5rem;
+    
+}
+.add{font-size: 1.3rem;}
+.list-top{
+    margin-top: .2rem;
+    display: flex;
+    margin-right: 1rem;
+}
+#threeDots {
+    height:2rem;
+    width:1.8rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #e9ecef;
+    padding-bottom: 1rem;
+    margin-left: 0.4rem;
+}
+#addAnotherCard, #checklistBtn {
+    text-decoration: none;
+    color: #5e6c84;
+    padding: .4rem .4rem;
+    padding-right: 5rem;
+    cursor: pointer;
+}
+#addAnotherCard:hover, #threeDots:hover, #checklistBtn:hover, .button:hover {
+    background-color: rgba(9,30,66,.08);
+    color: #172b4d;
+    border-radius: .3rem;
+}
+.delete-card{
+    height: 2rem;
+}
+.card {
+    margin: auto .5rem 0.3rem 0.5rem;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 85% 15%;
+
+}
+.card-body{
+    cursor: pointer;
+    color: #172b4d;
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem 0.4rem 0.3rem;
+}
+.text-area{
+    padding: 0rem 0.4rem 0rem 0rem;  
+}
+.create-textarea{
+    margin-top: 1rem;
+    margin-left: 0.4rem;
+    display: none;
+}
+.modal-content{
+    width:50vw;
+}
+#cardDescription{ width: 25rem;}
+#checklistBtn{ height: 2.5rem; margin-top: 1rem; background-color: #e9ecef;}
+/* .description-checklist{ display: flex;
+    justify-content: space-between;
+} */
+
+.checklist-header{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    background-color: #e9ecef;
+    height: 2rem;
+    border:none;
+    cursor: pointer;
+    color: #5e6c84;
+    outline: none;
+}
+.add-items{
+    margin-top:1.5rem;
+}
+.add-item-textarea{
+    margin-top: 2rem;
+}
+#addItemForm{
+    margin-bottom: 1.2rem;
+}
+.add-item-textarea{
+    display: none;
+}
+.progress{margin-bottom: 1rem;}

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Trello Clone</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-darkblack">
+      <a class="navbar-brand" href="#">
+        <img src="Trello_logo.png" width="60" height="50" alt="trello logo">
+      </a>
+    </nav>
+    <nav class="navbar navbar-light bg-darkblack">
+      <p>jdshkfz</p>
+    </nav>
+    <div class="jumbotron list" id="lists">
+      <div class="list-top">
+        <input type="text" class="form-control" id="listTitle" value = "to do list">
+        <button id="threeDots">...</button>
+      </div>
+      <div class="card-container" id>
+        
+        <!-- <div class="card">
+          <div class="card-body">
+            This is some text within a card body.
+          </div>
+          <button type="button" class="btn btn-light delete-card">X</button>
+        </div> -->
+      
+      </div> 
+      <div class="create-textarea" id="titleSpace">
+        <div class="form-group text-area">
+          <textarea class="form-control" id="cardTitle"></textarea>
+        </div>
+        <button type="button" class="btn btn-success">Add Cards</button>
+        <button type="button" class="btn btn-danger">Cancel</button>
+      </div>
+      <div class="list-bottom">
+        <a id="addAnotherCard" ><span class="add">+</span> Add another card</a>
+      </div> 
+  <!-- Modal -->
+      <div class="modal fade" id="modalForCards" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalTitle">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body description-checklist" id = modalBody>
+              
+              <a id="checklistBtn" >Checklist</a>
+              <div class="create-textarea" id="checklistTextArea">
+                <div class="form-group text-area">
+                  <textarea class="form-control" id="checkListTitle"></textarea>
+                </div>
+                <button type="button" class="btn btn-success checklist">Add checklist</button>
+                <button type="button" class="btn btn-danger checklist">Cancel</button>
+              </div>
+<!-- for adding the checklist and items -->
+              <!-- <div class="checklist-container">
+                <div class="checklist-content">
+                  <div class="checklist-header">
+                    <p class="checklist-title">hjdbha</p>
+                    <button type="button" class="button delete-checklist">delete</button>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Default checkbox
+                    </label>
+                  </div>
+                  
+                </div>
+                <div class="add-item-textarea">
+                  <input type="text" class="form-control item" id="addItemForm">
+                  <button type="button" class="btn btn-success add-item">Add</button>
+                  <button type="button" class="btn btn-danger cancel-item">Cancel</button>
+                </div>
+                <button type="button" class="button add-items" id="addItems">Add items</button>
+              </div> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalForCards">
+      Launch demo modal
+    </button> -->
+    
+    
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="domAnimation.js"></script>
+  </body>
+</html>
