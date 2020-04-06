@@ -113,3 +113,5 @@
     display: none;
 }
 .progress{margin-bottom: 1rem;}
+.form-check-label {cursor: pointer;}
+.update-item-area {display: none;}
