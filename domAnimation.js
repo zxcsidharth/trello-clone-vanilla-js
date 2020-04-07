@@ -1,4 +1,3 @@
-// import {key, token, board_id, list_id, base_url} from './constant.js';
 const APIkey = '82419201b70a640e24addb464cc51a86';
 const token = 'e38724577bf4f09a950b244769bab02b3c66c1ad400c194a0c453f2ad48f833e';
 const board_id = "5e84855c0e3020311734d71b";
@@ -6,11 +5,13 @@ const list_id = "5e85df93edcbde48590e50db";
 const list_name = "to Do";
 const base_url = "https://api.trello.com/1/";
 var cardIdOnModal = 0;
-
-
 var cardContainer = document.getElementsByClassName('card-container')[0];
 
 document.addEventListener("DOMContentLoaded", function(){
+  fetchAllCardAPI();
+});
+
+function fetchAllCardAPI() {
   let url = `${base_url}lists/${list_id}/cards?key=${APIkey}&token=${token}`;
   fetch(url)
      .then((response) => {
@@ -31,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(){
         bodyTag.appendChild(errorStatus);
         bodyTag.appendChild(errorLine);
      });
-});
+}
 
 function fetchAllCards(data) {
   data.forEach(card => {
@@ -50,7 +51,6 @@ function fetchAllCards(data) {
     cards.appendChild(deleteBtn);
     cardContainer.appendChild(cards);
   });
-
 }
 
 function fetchAllChecklistAPI(cardId) {
@@ -370,7 +370,6 @@ function progressbarUpdation(progressbar, itemCount, countCheckedItem) {
   progressbar.setAttribute('aria-valuemin', '0');
   progressbar.setAttribute('aria-valuemax', '100');
   progressbar.textContent = `${calcPercentage}%`;
-  console.log('progress done');
 }
 
 function markCheckboxItem(e) {
