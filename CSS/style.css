@@ -79,14 +79,11 @@
     display: none;
 }
 .modal-content{
+    background-color: #e9ecef;
     width:50vw;
 }
 #cardDescription{ width: 25rem;}
 #checklistBtn{ height: 2.5rem; margin-top: 1rem; background-color: #e9ecef;}
-/* .description-checklist{ display: flex;
-    justify-content: space-between;
-} */
-
 .checklist-header{
     margin-top: 2rem;
     display: flex;
