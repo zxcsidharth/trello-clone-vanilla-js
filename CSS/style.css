@@ -79,7 +79,7 @@
     display: none;
 }
 .modal-content{
-    background-color: #e9ecef;
+    /* background-color: #e9ecef; */
     width:50vw;
 }
 #cardDescription{ width: 25rem;}
